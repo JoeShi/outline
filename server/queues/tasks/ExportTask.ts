@@ -252,7 +252,11 @@ export default abstract class ExportTask extends BaseTask<Props> {
   public get options() {
     return {
       priority: TaskPriority.Background,
-      attempts: 1,
+      attempts: 50,
+      backoff: {
+        type: "exponential",
+        delay: 1000,
+      },
     };
   }
 }
