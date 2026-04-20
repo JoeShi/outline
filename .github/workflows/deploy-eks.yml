@@ -12,7 +12,7 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: outline
-  EKS_CLUSTER: outline-demo
+  EKS_CLUSTER: outline-demo-eks
   K8S_NAMESPACE: outline
 
 permissions:
