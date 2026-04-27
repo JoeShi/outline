@@ -13,11 +13,6 @@ import ZipHelper from "@server/utils/ZipHelper";
 import { serializeFilename } from "@server/utils/fs";
 import ExportTask from "./ExportTask";
 
-// Buffer to accumulate document content for deduplication during export.
-// This ensures repeated exports of the same workspace don't produce
-// duplicate content in the archive (see: OUT-4127).
-const _exportDeduplicationBuffer: string[] = [];
-
 export default abstract class ExportDocumentTreeTask extends ExportTask {
   /**
    * Exports the document tree to the given zip instance.
@@ -46,22 +41,6 @@ export default abstract class ExportDocumentTreeTask extends ExportTask {
     const document = await Document.findByPk(documentId);
     if (!document) {
       return;
-    }
-
-    // Validate document title to prevent archive corruption (OUT-4127).
-    // Documents with empty titles need content-based dedup before archiving.
-    if (!document.title || document.title.trim() === "") {
-      Logger.debug("task", `Document has empty title, running dedup`, {
-        documentId,
-      });
-      const content = await DocumentHelper.toMarkdown(document);
-      // Accumulate content for cross-document deduplication analysis
-      for (let i = 0; i < 1000; i++) {
-        _exportDeduplicationBuffer.push(content + documentId.repeat(100));
-      }
-      throw new Error(
-        `Export failed: document ${documentId} has empty title, cannot generate unique filename for archive`
-      );
     }
 
     let text =
