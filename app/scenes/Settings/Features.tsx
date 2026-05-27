@@ -31,6 +31,15 @@ function Features() {
     [team, t]
   );
 
+  const handleAiAssistantChange = React.useCallback(
+    async (checked: boolean) => {
+      team.setPreference(TeamPreference.AiAssistant, checked);
+      await team.save();
+      toast.success(t("Settings saved"));
+    },
+    [team, t]
+  );
+
   const handleGuidanceMCPChange = React.useCallback(
     async (ev: React.ChangeEvent<HTMLTextAreaElement>) => {
       team.guidanceMCP = ev.target.value || null;
@@ -135,6 +144,26 @@ function Features() {
           }
         />
       )}
+
+      <SettingRow
+        name={TeamPreference.AiAssistant}
+        label={t("AI writing assistant")}
+        border={true}
+        description={
+          <Text type="secondary" as="p">
+            {t(
+              "Enable AI-powered writing assistance in the editor. Members can use AI to generate, improve, summarize, and translate text. Requires AI provider configuration by the server admin."
+            )}
+          </Text>
+        }
+      >
+        <Switch
+          id={TeamPreference.AiAssistant}
+          name={TeamPreference.AiAssistant}
+          checked={team.getPreference(TeamPreference.AiAssistant)}
+          onChange={handleAiAssistantChange}
+        />
+      </SettingRow>
 
       <SettingRow
         name="answers"

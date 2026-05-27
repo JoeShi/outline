@@ -1,0 +1,6 @@
+{
+  "id": "ai",
+  "name": "AI Writing Assistant",
+  "priority": 100,
+  "description": "Adds AI-powered writing assistance to the editor using an OpenAI-compatible LLM provider."
+}
