@@ -51,6 +51,7 @@
     "> 0.25%, not dead"
   ],
   "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.990.0",
     "@aws-sdk/client-s3": "^3.990.0",
     "@aws-sdk/lib-storage": "^3.990.0",
     "@aws-sdk/s3-presigned-post": "^3.990.0",

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import type Document from "~/models/Document";
 import KeyboardShortcutsButton from "./KeyboardShortcutsButton";
+import SmartQAButton from "./SmartQAButton";
+import SmartQAPanel from "./SmartQAPanel";
 import ConnectionStatus from "./ConnectionStatus";
 import { SizeWarning } from "./SizeWarning";
 
@@ -9,11 +11,15 @@ type Props = {
 };
 
 export const Footer = ({ document }: Props) => (
-  <FooterWrapper>
-    <ConnectionStatus />
-    <SizeWarning document={document} />
-    <KeyboardShortcutsButton />
-  </FooterWrapper>
+  <>
+    <SmartQAPanel />
+    <FooterWrapper>
+      <ConnectionStatus />
+      <SizeWarning document={document} />
+      <SmartQAButton />
+      <KeyboardShortcutsButton />
+    </FooterWrapper>
+  </>
 );
 
 const FooterWrapper = styled.div`

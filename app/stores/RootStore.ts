@@ -29,6 +29,7 @@ import SharesStore from "./SharesStore";
 import StarsStore from "./StarsStore";
 import SubscriptionsStore from "./SubscriptionsStore";
 import TemplatesStore from "./TemplatesStore";
+import SmartQAStore from "./SmartQAStore";
 import UiStore from "./UiStore";
 import UnfurlsStore from "./UnfurlsStore";
 import UserMembershipsStore from "./UserMembershipsStore";
@@ -63,6 +64,7 @@ export default class RootStore {
   searches: SearchesStore;
   shares: SharesStore;
   ui: UiStore;
+  smartQA: SmartQAStore;
   unfurls: UnfurlsStore;
   stars: StarsStore;
   subscriptions: SubscriptionsStore;
@@ -110,6 +112,7 @@ export default class RootStore {
     this.registerStore(DocumentPresenceStore, "presence");
     this.registerStore(DialogsStore, "dialogs");
     this.registerStore(UiStore, "ui");
+    this.registerStore(SmartQAStore, "smartQA");
 
     // AuthStore must be initialized last as it makes use of the other stores.
     this.registerStore(AuthStore, "auth");

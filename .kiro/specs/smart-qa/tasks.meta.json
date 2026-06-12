@@ -1,0 +1,357 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 创建共享类型定义文件": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816740
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234823117
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234961391
+      }
+    ],
+    "1.2 创建后端 API 路由骨架与 Schema 验证": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816743
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234823908
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234962153
+      }
+    ],
+    "2.1 实现 SmartQADocumentRetriever 服务": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816746
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234970563
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781235535306
+      }
+    ],
+    "3.1 实现 SmartQALLMService 服务": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816749
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781235554049
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236179880
+      }
+    ],
+    "4.1 实现 smartQA.ask 路由处理逻辑": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816759
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236184406
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236411227
+      }
+    ],
+    "5. 检查点 - 后端服务验证": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816762
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236416364
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236625032
+      }
+    ],
+    "6.1 实现 SmartQAStore": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816765
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236629180
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236824339
+      }
+    ],
+    "7.1 实现 SmartQAButton 组件": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816767
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236828932
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237653903
+      }
+    ],
+    "7.2 将 SmartQAButton 集成到 Footer 区域": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816769
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236829845
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237654724
+      }
+    ],
+    "7.3 实现 SmartQAPanel 面板组件": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816772
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236830667
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237655547
+      }
+    ],
+    "7.4 实现 SmartQAInput 输入组件": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816775
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236831468
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237656295
+      }
+    ],
+    "7.5 实现 SmartQAMessageItem 消息组件": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816777
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236832316
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237657051
+      }
+    ],
+    "8.1 实现 SmartQACitationList 组件": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816780
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237663449
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237670494
+      }
+    ],
+    "9.1 实现面板中的新建对话按钮和对话历史管理 UI": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816782
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237664770
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237671292
+      }
+    ],
+    "10. 检查点 - 前端功能验证": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816793
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237675778
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237823907
+      }
+    ],
+    "11.1 集成前后端完整流程": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816798
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237833825
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781238066582
+      }
+    ],
+    "12. 最终检查点 - 确保所有测试通过": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234816804
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781238089628
+      },
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781238355476
+      }
+    ],
+    "1. 搭建项目结构与核心类型定义": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781234962156
+      }
+    ],
+    "2. 实现文档检索服务": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781235535313
+      }
+    ],
+    "3. 实现 LLM 服务": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236179882
+      }
+    ],
+    "4. 完成后端 API 端点集成": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236411230
+      }
+    ],
+    "6. 实现前端状态管理": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781236824344
+      }
+    ],
+    "7. 实现前端 UI 组件": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237657055
+      }
+    ],
+    "8. 实现来源引用功能": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237670497
+      }
+    ],
+    "9. 实现多轮对话与新建对话功能": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781237671295
+      }
+    ],
+    "11. 端到端集成与错误处理完善": [
+      {
+        "executionId": "496eb379-bac6-4fb9-9327-7b9fd0f721fd",
+        "chatSessionId": "d58d3d4d-be4e-44ea-86f3-8575732ccd4a",
+        "timestamp": 1781238066589
+      }
+    ]
+  }
+}
