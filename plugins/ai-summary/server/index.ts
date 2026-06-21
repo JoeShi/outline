@@ -6,7 +6,7 @@ import AISummaryTask from "./tasks/AISummaryTask";
 
 const enabled =
   !!env.AI_SUMMARY_BEDROCK_REGION &&
-  !!env.AI_SUMMARY_BEDROCK_ACCESS_KEY_ID;
+  !!(env.AI_SUMMARY_BEDROCK_ACCESS_KEY_ID && env.AI_SUMMARY_BEDROCK_SECRET_ACCESS_KEY);
 
 if (enabled) {
   PluginManager.add([
