@@ -1,10 +1,12 @@
 import Router from "koa-router";
 import { Document } from "@server/models";
 import auth from "@server/middlewares/authentication";
+import { rateLimiter } from "@server/middlewares/rateLimiter";
 import validate from "@server/middlewares/validate";
 import { authorize } from "@server/policies";
 import { presentDocument } from "@server/presenters";
 import type { APIContext } from "@server/types";
+import { RateLimiterStrategy } from "@server/utils/RateLimiter";
 import AISummaryTask from "../tasks/AISummaryTask";
 import * as T from "./schema";
 
@@ -16,6 +18,7 @@ const router = new Router();
  */
 router.post(
   "aiSummary.generate",
+  rateLimiter(RateLimiterStrategy.TenPerHour),
   auth(),
   validate(T.AISummaryGenerateSchema),
   async (ctx: APIContext<T.AISummaryGenerateReq>) => {
@@ -35,7 +38,7 @@ router.post(
     });
 
     ctx.body = {
-      data: presentDocument(document),
+      data: await presentDocument(ctx, document),
       success: true,
     };
   }
