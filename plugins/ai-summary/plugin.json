@@ -1,0 +1,5 @@
+{
+  "id": "ai-summary",
+  "name": "AI Summary",
+  "description": "Generate AI-powered document summaries using Amazon Bedrock (Claude Sonnet model)."
+}

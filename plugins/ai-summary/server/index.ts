@@ -1,0 +1,24 @@
+import { PluginManager, Hook } from "@server/utils/PluginManager";
+import config from "../plugin.json";
+import router from "./api/aiSummary";
+import env from "./env";
+import AISummaryTask from "./tasks/AISummaryTask";
+
+const enabled =
+  !!env.AI_SUMMARY_BEDROCK_REGION &&
+  !!(env.AI_SUMMARY_BEDROCK_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID);
+
+if (enabled) {
+  PluginManager.add([
+    {
+      ...config,
+      type: Hook.API,
+      value: router,
+    },
+    {
+      ...config,
+      type: Hook.Task,
+      value: AISummaryTask,
+    },
+  ]);
+}

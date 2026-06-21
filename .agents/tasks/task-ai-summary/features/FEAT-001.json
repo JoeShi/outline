@@ -1,0 +1,30 @@
+{
+  "id": "FEAT-001",
+  "type": "feat",
+  "description": "Create the ai-summary plugin with AWS Bedrock integration. This plugin adds an API endpoint to generate AI summaries for documents using Amazon Bedrock (Claude Sonnet model). It includes: plugin registration, environment configuration for Bedrock credentials, a background task to call the Bedrock API, an API endpoint to trigger summary generation, and the summary is stored in the existing Document.summary field.",
+  "status": "in_progress",
+  "steps": [
+    "Step 1: Create plugins/ai-summary/plugin.json following the pattern of plugins/slack/plugin.json. Set id to 'ai-summary', name to 'AI Summary', and add a description.",
+    "Step 2: Create plugins/ai-summary/server/env.ts following plugins/slack/server/env.ts pattern. Define environment variables: AI_SUMMARY_BEDROCK_REGION (AWS region, default us-east-1), AI_SUMMARY_BEDROCK_MODEL_ID (model ID, default us.anthropic.claude-sonnet-4-20250514), AI_SUMMARY_BEDROCK_ACCESS_KEY_ID (optional, falls back to AWS_ACCESS_KEY_ID), AI_SUMMARY_BEDROCK_SECRET_ACCESS_KEY (optional, falls back to AWS_SECRET_ACCESS_KEY). Use class-validator decorators.",
+    "Step 3: Install @aws-sdk/client-bedrock-runtime package using yarn add @aws-sdk/client-bedrock-runtime",
+    "Step 4: Create plugins/ai-summary/server/tasks/AISummaryTask.ts extending BaseTask. The task should: receive documentId and userId as props, load the document, convert to plain text using DocumentHelper.toPlainText(), call Bedrock InvokeModel API with Claude Sonnet to generate a summary (prompt: summarize the document in 2-3 sentences), save the summary to document.summary field, and fire an event.",
+    "Step 5: Create plugins/ai-summary/server/api/aiSummary.ts with a koa-router. Add POST endpoint 'aiSummary.generate' that: requires authentication, validates request (documentId required via zod schema), loads the document, checks user has read permission via authorize(), schedules the AISummaryTask, and returns success response with the document data.",
+    "Step 6: Create plugins/ai-summary/server/api/schema.ts with zod validation schema for the API endpoint (AISummaryGenerateSchema with body containing documentId as uuid).",
+    "Step 7: Create plugins/ai-summary/server/index.ts following plugins/slack/server/index.ts pattern. Register the plugin with PluginManager using Hook.API for the router and Hook.Task for AISummaryTask. Enable only when AI_SUMMARY_BEDROCK_REGION and credentials are configured.",
+    "Step 8: Create a test file plugins/ai-summary/server/tasks/AISummaryTask.test.ts that tests the task perform method with a mocked Bedrock client. Verify the document summary field is updated after the task runs."
+  ],
+  "acceptance_criteria": [
+    "Plugin directory plugins/ai-summary/ exists with proper structure (plugin.json, server/index.ts, server/env.ts, server/api/, server/tasks/)",
+    "@aws-sdk/client-bedrock-runtime is added to package.json dependencies",
+    "AISummaryTask correctly calls Bedrock API and updates document.summary",
+    "API endpoint aiSummary.generate is registered and accessible when plugin is enabled",
+    "Environment variables are properly validated with class-validator",
+    "Running yarn test plugins/ai-summary passes all tests"
+  ],
+  "verification": [
+    "Run: yarn test plugins/ai-summary/server/tasks/AISummaryTask.test.ts",
+    "Run: yarn lint plugins/ai-summary/"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}
